@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comfortaa:wght@300&family=Nunito&display=swap');
+
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  background-color: black;
+  line-height: 1.4;
+  width: 100%;
+}
+
+#background {
+  position: absolute; 
+  width: 70%; 
+  height: auto; 
+    
+  left: 772px; 
+  top: 0px; 
+  z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+}
+
+.background_stretch {
+ width: 70%;
+ height:auto;
+ opacity: 0.75;
+ left: 772px;
+}
+
+
+#logo {
+position: fixed;
+height: auto;
+width: 150px;
+  
+top: 10px;
+left: 5vw;
+  
+z-index: 4;
+}  
+
+.header{
+  position: relative;
+  top: 13vw;
+  left: 300px;
+  text-align: left;
+  z-index: 2;
+}
+
+.header_title {
+  font-size: 70px;
+  z-index: 2;
+  font-family: 'Bebas Neue', cursive;
+  color: #000;
+  text-shadow: 0 0 3px #FFF;
+}
+  
+.header_subtitle {
+  font-size: 30px; 
+  z-index: 2;
+  color: silver; 
+  font-family: 'Comfortaa', cursive;
+}    
+
+
+
+
+#navbar {
+  position: fixed;
+  height: 100%;
+  min-width: 300px;
+  width: 300px;
+  
+  top: 0px;
+  left: 0px;
+
+  color: black;
+  background-color: white;
+  padding: 75px 0px;
+  z-index: 3;
+}
+
+
+#navbar header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  top: 4vw;
+  position: relative;
+}
+
+#navbar ul {
+  border: none;
+}
+
+
+#navbar li {
+  list-style: none;
+  padding: 5px 0px;
+  position: relative;
+  width: 100%;
+  top: 5vw;
+}
+
+
+#navbar a {
+  color: gray;
+  text-decoration: none;
+}
+
+
+#navbar a:hover{ 
+  color: black;
+  text-decoration: none;
+}
+
+
+#main-doc {
+  position: absolute;
+  
+  top: 30vw;
+  margin-left: 310px;
+  
+  padding: 20px;
+}
+
+
+
+section {
+  background: rgb(230, 255, 255, 0.1);
+  padding: 2.5rem 2.5rem;
+  border-radius: 2rem;
+  width: 700px;
+  margin: auto; 
+}
+
+section header {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 10px;
+  font-family: 'Bebas Neue', cursive;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+h3 {
+  font-family: 'Comfortaa', cursive;
+  text-shadow: 2px 2px 4px #000000;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #FFCB15;
+}
+
+h4 {
+  font-family: 'Comfortaa', cursive;
+  text-shadow: 2px 2px 4px #000000;
+  text-transform: capitalize;
+}
+
+b {
+  text-shadow: 2px 2px 4px #000000;
+}
+
+ul {
+  border-left: 5px solid #FFCB15;
+
+  list-style: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================*/
+@media (max-width: 800px) {
+  /* For mobile phones: */
+  html {
+    width: auto;
+  }
+  #logo {
+  position: fixed;
+  min-width: 121px;
+  width: 121px;
+  height: auto;
+
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  }  
+  
+  #navbar {
+  position: fixed;
+  min-width: 120px;
+  width: 120px;
+  display: block;
+  font-size: 3vw;
+  
+  height: 100%;
+
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+  top: 0px;
+  margin-top: 100px; 
+  left: 0px;
+
+  color: black;
+  background-color: white;
+  padding: 0px 0px;
+  z-index: 1;
+}
+ 
+  #navbar header { 
+    font-size: 4vw; 
+  }
+  
+  #navbar ul {
+    padding-left: 2px;
+  }
+
+  #navbar li {
+    padding-bottom: 10px;
+    padding-top: 10x;
+  }
+  
+  .header_title {
+    font-size: 6vw;
+    left: 120px;
+    width: 80px;
+    margin-bottom: 0;
+  }
+  
+  .header_subtitle {
+    font-size: 2.5vw;
+    left: 120px;
+    width: 100px;
+    margin-top: 0;
+  }
+  
+  #background {
+  position: absolute; 
+  width: 70%; 
+  height: auto; 
+    
+  left: 216px; 
+  top: 0px; 
+  z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+  }
+  
+  .background_stretch {
+  position: absolute; 
+  width: 70%; 
+  height: auto; 
+    
+  left: 0px; 
+  top: 0px; 
+  z-index: -1; /* Ensure div tag stays behind content; -999 might work, too. */
+  }
+
+
+  #main-doc {
+    position: absolute;
+  
+    top: 30vw;
+    margin-left: 120px;
+
+    padding: 0;
+  }
+  
+  .main-section {
+    background: rgb(230, 255, 255, 0.1);
+    padding: 0px;
+    border-radius: 0;
+    width: 290px;
+    margin: auto; 
+    font-size: 8px;
+  }
+  
+  section header {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 5px;
+  }
+
+  .header {
+    left: 120px;
+    top: 9.5vw;
+    width: 70%;
+  }
+
+  section ul {
+    padding-left: 5px;
+  }
+}
