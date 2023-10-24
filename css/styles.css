@@ -62,15 +62,13 @@ body {
   text-decoration: none;
 }
 
+.burger-menu {
+  display: none;
+}
+
 #logo {
-/* position: fixed; */
-height: auto;
-width: 150px;
-  
-/* top: 10px;
-left: 4vw; */
-  
-/* z-index: 4; */
+  height: auto;
+  width: 150px;
 }
 
 .background_stretch {
@@ -288,6 +286,7 @@ section header {
   }
 
   .burger-menu {
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
