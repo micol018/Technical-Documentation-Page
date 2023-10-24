@@ -229,7 +229,7 @@ p {
 } 
 
 #navbar li {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .header_title {
@@ -237,13 +237,13 @@ p {
 }
 
 .header_subtitle {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .main-section {
     background: rgb(230, 255, 255, 0.1);
     border-radius: 7px;
-    font-size: 10px;
+    font-size: 12px;
   }
   
 section header {
@@ -255,19 +255,19 @@ section header {
 
   section ul {
     padding-left: 5px;
-    font-size: 10px;
+    font-size: 12px;
   }
 
   p {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   h3 {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   h4 {
-    font-size: 10px;
+    font-size: 12px;
   }
 
  }
@@ -319,8 +319,8 @@ section header {
 
   .menu li {
     list-style: none;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   .menu a{ 
