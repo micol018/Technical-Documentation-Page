@@ -13,40 +13,41 @@ body {
   overflow-x: hidden;
 }
 
+.d-flex {
+ display: flex;
+ position: relative;
+}
+
 #navbar {
   position: fixed;
-  height: 100%;
+  top: 0;
+  height: 100vh;
+  flex: 0 0 auto;
   width: 20%;
-  
-  top: 0px;
-  left: 0px;
-
+  text-align: center;
   color: black;
   background-color: white;
-  padding: 75px 0px;
-  z-index: 3;
+  padding: 20px 10px;
 }
 
 
-#navbar header {
+#navbar h1 {
   color: black;
   text-align: center;
   font-size: 1.8em;
-  top: 4.5vw;
-  position: relative;
 }
 
 #navbar ul {
   border: none;
+  text-align: left;
+  padding-top: 30px;
 }
 
 
 #navbar li {
   list-style: none;
   padding: 5px 0px;
-  position: relative;
   width: 100%;
-  top: 5vw;
 }
 
 
@@ -62,29 +63,28 @@ body {
 }
 
 #logo {
-position: fixed;
+/* position: fixed; */
 height: auto;
 width: 150px;
   
-top: 10px;
-left: 5vw;
+/* top: 10px;
+left: 4vw; */
   
-z-index: 4;
+/* z-index: 4; */
 }
 
-
 .background_stretch {
-  position: relative;
-  width: 60%;
-  left: 40%;
+  position: absolute;
+  height: 5.5%;
+  width: auto;
+  right: 0%;
   opacity: 0.75;
   z-index: -1;
 } 
 
 .header{
   position: absolute;
-  top: 50%;
-  left: 20%;
+  top: 4%;
   text-align: left;
   z-index: 2;
   margin-left: 8px;
@@ -104,20 +104,25 @@ z-index: 4;
 }
 
 #main-doc {
+  margin-left: 20%;
+}
+
+.main-content {
   position: relative;
-  top: 0;
-  padding: 0;
-  left: 20.5%;
+  top: 5.5%;
+  padding-left: 10px;
+  padding-bottom: 10px;
 }
 
 section {
   border-radius: 2rem;
   position: relative;
+
 }
 
 .sec-a {
   background: rgb(230, 255, 255, 0.05);
-  width: 75%
+  width: 85%
 
 }
 
@@ -200,7 +205,7 @@ b {
   text-shadow: 2px 2px 4px #000000;
 }
 
-ul {
+.main-section ul {
   border-left: 5px solid #FFCB15;
   list-style: none;
   padding: 2px 0 2px 5px;
@@ -216,29 +221,17 @@ p {
   border: 3px solid #000;
 }
 
-
-
-@media (max-width: 800px) {
+@media (max-width: 991px) {
 #logo {
   width: 60px;
-  left:10px;
 }
 
-#navbar header {
+#navbar h1 {
   font-size: 20px;
 } 
 
 #navbar li {
   font-size: 10px;
-}
-
-.background_stretch {
-  left: 43%;
-}
-
-.header {
-  top: 12%;
-  left: 23%;
 }
 
 .header_title {
@@ -249,18 +242,10 @@ p {
   font-size: 10px;
 }
 
-
-#main-doc {
-  margin: 0;
-  padding: 0;
-}
-
-main-section {
+.main-section {
     background: rgb(230, 255, 255, 0.1);
-    padding: 0px;
-    border-radius: 0;
-    margin: auto; 
-    font-size: 8px;
+    border-radius: 7px;
+    font-size: 10px;
   }
   
 section header {
@@ -288,3 +273,84 @@ section header {
   }
 
  }
+ 
+@media (max-width: 575px) {
+  #navbar {
+    display: none;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+
+  .sec-a {
+    width: 90%
+  }
+
+  .burger-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), right bottom;
+	  -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px); 
+    z-index: 4; 
+  }
+
+  .burger-menu .d-flex {
+    justify-content: space-between;
+  }
+
+  #logo {
+    filter: invert(1);
+    padding: 5px;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    width: 100vw;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.9);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+  }
+
+  .menu li {
+    list-style: none;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+  .menu a{ 
+    color: white;
+    text-decoration: none;   
+  }
+
+  .menu a:hover{ 
+    color: #FFCB15;
+    text-decoration: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    width: fit-content;
+  }
+
+  .bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+
+  .menu.active {
+    display: block;
+  }
+}
